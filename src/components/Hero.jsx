@@ -46,7 +46,7 @@ const Hero = () => {
                 width={75}
                 height={75}
                 alt='floating-coin'
-                className='md:block hidden animate-bounce'
+                className='md:block hidden animate-bounce z-auto'
               />
             </a>
             <div className='text-center uppercase flex flex-col pt-20'>
@@ -66,7 +66,7 @@ const Hero = () => {
               width={75}
               height={75}
               alt='floating-coin'
-              className='md:block hidden animate-bounce'
+              className='md:block hidden animate-bounce z-10'
             />
           </div>
           <button
@@ -76,7 +76,7 @@ const Hero = () => {
           </button>
           <div
             onLoad={() => setCoinsLoad(false)}
-            className={`flex md:flex-row lg:gap-x-20 md:gap-x-14 gap-x-3 m-9 ${
+            className={`flex md:flex-row lg:gap-x-20 md:gap-x-14 gap-x-1 m-9 ${
               showPrice ? " " : " hidden md:flex"
             }`}>
             {data.length > 0 ? (
@@ -85,7 +85,7 @@ const Hero = () => {
                   <img
                     src={item?.image}
                     alt={item?.name || "coins"}
-                    className='ml-5 md:w-20 md:h-20 w-16 h-16'
+                    className='ml-5 md:w-20 md:h-20 w-11 h-11'
                   />
                   <p className='lg:text-2xl md:text-lg text-sm font-bold text-white mt-4'>
                     {item?.name}&nbsp;
