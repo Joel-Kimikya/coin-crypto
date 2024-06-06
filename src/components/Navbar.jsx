@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`flex flex-row bg-transparent items-center md:justify-evenly justify-between py-5 px-12 fixed top-0 w-full text-white z-50${
+        className={`flex flex-row bg-transparent items-center md:justify-evenly justify-between py-5 px-12 fixed top-0 w-full text-white z-[99999] ${
           sticky ? "shadow-3xl !bg-secondary" : ""
         }`}>
         <Link href='/'>
